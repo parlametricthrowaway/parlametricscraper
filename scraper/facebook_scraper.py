@@ -66,7 +66,6 @@ def get_comments():
 
 def get_driver():
     options = Options()
-    options.add_extension(os.getcwd() + "\cookieblocker.crx")
     options.headless = False
     options.add_argument("--disable-infobars")
     options.add_argument("start-maximized")
