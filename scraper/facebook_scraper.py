@@ -56,8 +56,7 @@ def remove_crap(unfiltered_comments):
     return filtered_comments
 
 
-def get_comments():
-    driver = get_driver()
+def get_comments(driver):
     divs = driver.find_elements(By.TAG_NAME, 'div')
     for div in divs:
         st.write(div.text)
